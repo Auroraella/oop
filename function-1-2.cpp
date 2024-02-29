@@ -3,7 +3,7 @@ double array_mean(int array[], int n) {
     return 0.0;
   }
     int sum = 0;
-    int mean;
+    double mean;
     for (int i = 0; i < n; i++) {
         sum = sum + array[i];
     }
