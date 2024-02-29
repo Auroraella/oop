@@ -8,5 +8,7 @@ void print_pas_fail(char grade){
         case 'D':
         case 'E':
         std::cout << "Fail\n";
-        break;    }
+        default:
+            break;  
+    }
 }

@@ -14,6 +14,7 @@ int main() {
         std::cout << "Enter a number: ";
         std::cin >> arr[i];
     }
+    std::cout << is_ascending(arr, n) << std::endl;
 
-    return true;
+    return 0;
 }

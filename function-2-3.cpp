@@ -1,6 +1,9 @@
+#include <iostream>
+
 void two_five_nine(int array[], int n) {
     if (n < 1) {
-        return 0;
+        std::cout << 0;
+        return ;
     }
 
     int num_twos = 0;
@@ -24,11 +27,7 @@ void two_five_nine(int array[], int n) {
             default:
             break;
         }
-        //std::cout << "2:" << num_twos << ";5:" << num_fives << ";9:" << num_nines << ";\n";
+       
     }
-    return num_twos;
-    return num_fives;
-    return num_nines;
-
-    
+    std::cout << "2:" << num_twos << ";5:" << num_fives << ";9:" << num_nines << ";\n";    
 }
