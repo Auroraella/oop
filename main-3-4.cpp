@@ -8,6 +8,6 @@ int main() {
     std::cout << "Enter a grade: ";
     std::cin >> score;
 
-    std::cout << print_pas_fail(score) << std::endl;
+    print_pas_fail(score);
     return 0;
 }

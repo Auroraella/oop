@@ -1,3 +1,5 @@
+#include <iostream>
+
 void print_pas_fail(char grade){
     switch (grade) {
         case 'A':
@@ -7,8 +9,9 @@ void print_pas_fail(char grade){
             break;
         case 'D':
         case 'E':
-        std::cout << "Fail\n";
+            std::cout << "Fail\n";
+            break;
         default:
-            break;  
+            break;   
     }
 }
