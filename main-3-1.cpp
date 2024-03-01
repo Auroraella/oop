@@ -15,6 +15,7 @@ int main() {
         std::cout << "Enter a number: ";
         std::cin >> arr[i];
     }
+    
     std::cout << is_fanarray(arr, n) << std::endl;
     return 0;
 }

@@ -8,7 +8,7 @@ double sum_even(double array[], int n) {
     // Iterate through the array starting from index 0, and incrementing by 2 for even positions
     for (int i = 0; i < n; i++) {
         if (i % 2 == 0){
-            sum += array[i];
+            sum += array[i];  
         }
         
     }

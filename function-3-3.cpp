@@ -9,7 +9,7 @@ double weighted_average(int array[], int n) {
         int count = 0;
         for (int j = 0; j< n; j++){
             if (array[i] == array[j]){
-                count++;
+                count++; 
             }
         }
         result = result + (array[i]*count);

@@ -12,6 +12,7 @@ void print_pass_fail(char grade){
             std::cout << "Fail\n";
             break;
         default:
+            std::cout << "Nothing\n";
             break;   
     }
 }

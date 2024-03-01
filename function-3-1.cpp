@@ -13,7 +13,7 @@ bool is_fanarray(int array[], int n) {
 
     // Check if the array is a palindrome with numbers in ascending order
     for (int i = 1; i <= middle_index; i++) {
-        if (array[i] < array[i-1] || array[i-1] != array[n-i]) {
+        if (array[i] < array[i-1] || array[i-1] != array[n-i]) {   
             return false;
         }
     }
