@@ -1,15 +1,18 @@
-#include <iostream>
 #include <string>
-using namespace std;
+#include <iostream>
 
-extern string makeBaseTwo(int base10);
-int main() {
-  int base10;
-  std::cout << "Enter a number: ";
-  std::cin >> base10;
+void print_binary_str(std::string decimal_number) {
+    int base10 = std::stoi(decimal_number);
 
-  std::string base2 = makeBaseTwo(base10);
-  std::cout << "Base 2 equivalent: " << base2 << std::endl;
+    if (base10 == 0) {
+        std::cout << "0" << std::endl;
+    }
 
-  return 0;
+    std::string base2 = "";
+    while (base10 > 0) {
+        int remainder = base10 % 2;
+        base2 = std::to_string(remainder) + base2;
+        base10 = base10 / 2;
+    }
+    std::cout << base2 << std::endl;
 }
