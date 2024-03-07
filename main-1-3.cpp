@@ -12,4 +12,5 @@ int main() {
         }
     }
     count_digits(array);
+    std::cout << std::endl;
 }
