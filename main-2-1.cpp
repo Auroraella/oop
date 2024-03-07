@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 
-void print_binary_str(std::string decimal_number) {
+extern void print_binary_str(std::string decimal_number) {
     int base10 = std::stoi(decimal_number);
 
     if (base10 == 0) {
