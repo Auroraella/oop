@@ -10,7 +10,7 @@ int main() {
     int binary_digits[number_of_digits];
     for (int i = 0; i < number_of_digits; i++) {
         std::cout << "Enter a number: ";
-        std::cin >> binary_digits;
+        std::cin >> binary_digits[i];
     }
 
     int result = binary_to_int(binary_digits, number_of_digits);
