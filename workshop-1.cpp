@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 int main() {
     double Double = 9.9;
     char Char = 'A';
