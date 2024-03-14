@@ -21,9 +21,10 @@ int main() {
 
     // Hiển thị mảng sau khi thêm giá trị
     std::cout << "Mang sau khi them gia tri: ";
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         std::cout << dynamicArray[i] << " ";
     }
+    std::cout << std::endl;
 
     // Đừng quên giải phóng bộ nhớ của mảng động khi không cần thiết nữa
     delete[] dynamicArray;
