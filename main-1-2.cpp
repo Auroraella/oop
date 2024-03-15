@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-extern void modifyArray(double*& array, int& size, double value);
+extern void modifyArray(double* array, int size, double value);
 
 int main() {
     double* dynamicArray = new double[3];
@@ -20,7 +20,7 @@ int main() {
     }
     std::cout << std::endl;
 
-    delete[] dynamicArray;
+    //delete[] dynamicArray;
 
     return 0;
 }
