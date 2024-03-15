@@ -3,7 +3,7 @@ double arrayMin(double* array, int size) {
 
     for (int i = 0; i < size; i++) {
         if (array[i] < minValue) {
-            array[i] = minValue;
+            minValue = array[i];
         }
     }
 
