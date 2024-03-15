@@ -8,4 +8,5 @@ double arrayMin(double* array, int size) {
     }
 
     return minValue;
+
 }
