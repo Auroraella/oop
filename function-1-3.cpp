@@ -1,6 +1,5 @@
 #include "Person.h"
 
-
 PersonList deepCopyPersonList(PersonList pl){
     PersonList person_copy;
     person_copy.numPeople = pl.numPeople;
