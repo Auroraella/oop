@@ -13,14 +13,13 @@ int secondSmallestSum(int *numbers,int length) {
     if (length <= 1){
         return 0; // Assuming sum of empty array is 0
     }
-        
-    
+           
     int smallestSum = numbers[0];
     int secondSmallestSum = numbers[0] + numbers[1];
 
-    for (int i = 0; i < length; ++i) {
+    for (int i = 0; i < length; i++) {
         int currentSum = 0;
-        for (int j = i; j < length; ++j) {
+        for (int j = i; j < length; j++) {
             currentSum += numbers[j];
             if (currentSum < smallestSum) {
                 secondSmallestSum = smallestSum;
