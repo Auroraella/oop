@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Person.h"
 
+using namespace std;
+
 extern Person* createPersonArray(int n);
 
 int main() {
