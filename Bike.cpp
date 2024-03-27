@@ -16,12 +16,12 @@ int Bike::get_code() {
     return code;
 }
 
-// Setter for name
-void Bike::set_name(std::string new_name) {
-    name = new_name;
-}
+// // Setter for name
+// void Bike::set_name(std::string new_name) {
+//     name = new_name;
+// }
 
-// Setter for code
-void Bike::set_code(int new_code) {
-    code = new_code;
-}
+// // Setter for code
+// void Bike::set_code(int new_code) {
+//     code = new_code;
+// }

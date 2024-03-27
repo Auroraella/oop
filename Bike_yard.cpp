@@ -1,12 +1,16 @@
 #include "Bike_yard.h"
-#include <stdexcept>
 
-Bike_yard::Bike_yard() : max_capacity(0), current_size(0), bikes(nullptr) {}
+// Default constructor
+Bike_yard::Bike_yard() : capacity(0), current_size(0), bikes(nullptr) {}
+// Bike_yard::Bike_yard() : Bike_yard(0) {}
 
-Bike_yard::Bike_yard(int capacity) : max_capacity(capacity), current_size(0) {
+// Constructor with parameters
+Bike_yard::Bike_yard(int capacity) : capacity(capacity), current_size(0) {
     bikes = new Bike[capacity];
 }
 
+
+// Destructor
 Bike_yard::~Bike_yard() {
     delete[] bikes;
 }
@@ -28,13 +32,12 @@ int Bike_yard::has_code(int code) {
 Bike* Bike_yard::get_bikes() {
     return bikes;
 }
-
 bool Bike_yard::add_bike(Bike new_bike) {
-    if (current_size < max_capacity) {
-        bikes[current_size] = new_bike;
-        current_size++;
+// bool Bike_yard::add_bike(const Bike& new_bike) {
+    if (current_size < capacity) {
+        bikes[current_size++] = new_bike;
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
+

@@ -17,9 +17,9 @@ public:
     std::string get_name();
     int get_code();
 
-    // Setter methods
-    void set_name(std::string name);
-    void set_code(int code);
+    // // Setter methods
+    // void set_name(std::string name);
+    // void set_code(int code);
 };
 
 #endif // BIKE_H
