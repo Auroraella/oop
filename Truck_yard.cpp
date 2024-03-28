@@ -12,7 +12,7 @@ Truck_yard::Truck_yard(int capacity) : capacity(capacity), current_stock(0) {
 
 
 // Destructor
-Truck_yard::~Truck() {
+Truck_yard::~Truck_yard() {
     delete[] trucks;
 }
 
@@ -23,7 +23,7 @@ int Truck_yard::get_total_stock_count() {
 int Truck_yard::get_stock_count(int code) {
     int count = 0;
     for (int i = 0; i < current_stock; i++) {
-        if (trucks[i].get_brand_code() == b_code) {
+        if (trucks[i].get_brand_code() == code) {
             count++;
         }
     }
