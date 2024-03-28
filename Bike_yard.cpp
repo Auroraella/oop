@@ -21,7 +21,7 @@ int Bike_yard::get_current_number_of_Bike() {
 
 int Bike_yard::has_code(int code) {
     int count = 0;
-    for (int i = 0; i < current_size; ++i) {
+    for (int i = 0; i < current_size; i++) {
         if (bikes[i].get_code() == code) {
             count++;
         }
@@ -32,6 +32,7 @@ int Bike_yard::has_code(int code) {
 Bike* Bike_yard::get_bikes() {
     return bikes;
 }
+
 bool Bike_yard::add_bike(Bike new_bike) {
 // bool Bike_yard::add_bike(const Bike& new_bike) {
     if (current_size < capacity) {

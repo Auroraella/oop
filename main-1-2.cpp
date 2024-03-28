@@ -10,7 +10,7 @@ int main() {
     Bike b1("B1", 5); 
     Bike b2("B2", 5); 
     Bike b3("B3", 6); 
-    Bike b4("B3", 10); 
+    Bike b4("B4", 10); 
     
     if (bikeYard.add_bike(b1)) {
         std::cout << "Bike added successfully!" << std::endl;
