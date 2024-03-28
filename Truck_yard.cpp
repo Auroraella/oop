@@ -36,7 +36,6 @@ Truck* Truck_yard::get_current_stock_list() {
 }
 
 bool Truck_yard::addStock(Truck new_truck) {
-// bool Bike_yard::add_bike(const Bike& new_bike) {
     if (current_stock < capacity) {
         trucks[current_stock++] = new_truck;
         return true;
