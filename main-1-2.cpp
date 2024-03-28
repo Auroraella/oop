@@ -6,7 +6,6 @@ int main() {
 
     Truck_yard truckYard(3);
 
-    // Creating Bike objects using both constructors
     Truck t1(5, "T1"); 
     Truck t2(5, "T2"); 
     Truck t3(6, "T3"); 
