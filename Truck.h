@@ -11,7 +11,7 @@ private:
 public:
     // Constructors
     Truck();
-    Truck(std::string b_name, int b_code);
+    Truck(int b_code, std::string b_name);
 
     // Destructor
     //~Truck();
@@ -20,9 +20,6 @@ public:
     std::string get_brand_name();
     int get_brand_code();
 
-    // // Setter methods
-    // void set_name(std::string name);
-    // void set_code(int code);
 };
 
 #endif // TRUCK_H

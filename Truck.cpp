@@ -4,7 +4,7 @@
 Truck::Truck() : b_name(""), b_code(0) {}
 
 // Constructor with parameters
-Truck::Truck(std::string b_name, int b_code) : b_name(b_name), b_code(b_code) {}
+Truck::Truck(int b_code, std::string b_name) : b_code(b_code), b_name(b_name) {}
 
 // Getter for name
 std::string Truck::get_brand_name() {

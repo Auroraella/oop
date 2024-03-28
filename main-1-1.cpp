@@ -4,7 +4,7 @@
 int main() {
     // Creating Bike objects using both constructors
     Truck t1; // Default constructor
-    Truck t2("A", 5); // Parameterized constructor
+    Truck t2(5, "A"); // Parameterized constructor
     
     // Displaying information for b1 (default constructor)
     std::cout << "Default name: " << t1.get_brand_name() << ", Default code: " << t1.get_brand_code() << std::endl;
