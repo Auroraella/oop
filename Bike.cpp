@@ -1,7 +1,7 @@
 #include "Bike.h"
 
 // Default constructor
-Bike::Bike() : name("null"), code(0) {}
+Bike::Bike() : name(""), code(0) {}
 
 // Constructor with parameters
 Bike::Bike(std::string name, int code) : name(name), code(code) {}
