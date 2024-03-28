@@ -15,13 +15,3 @@ std::string Truck::get_brand_name() {
 int Truck::get_brand_code() {
     return b_code;
 }
-
-// // Setter for name
-// void Bike::set_name(std::string new_name) {
-//     name = new_name;
-// }
-
-// // Setter for code
-// void Bike::set_code(int new_code) {
-//     code = new_code;
-// }

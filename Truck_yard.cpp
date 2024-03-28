@@ -1,42 +1,44 @@
-#include "Bike_yard.h"
+#include "Truck_yard.h"
 
 // Default constructor
-Bike_yard::Bike_yard() : capacity(0), current_size(0), bikes(nullptr) {}
-// Bike_yard::Bike_yard() : Bike_yard(0) {}
+Truck_yard::Truck_yard() : capacity(0), current_stock(0), trucks(nullptr) {}
+
 
 // Constructor with parameters
-Bike_yard::Bike_yard(int capacity) : capacity(capacity), current_size(0) {
-    bikes = new Bike[capacity];
+Truck_yard::Truck_yard(int capacity) : capacity(capacity), current_stock(0) {
+    trucks = new Truck[capacity];
+    //trucks = Truck*[capacity];
 }
 
 
 // Destructor
-Bike_yard::~Bike_yard() {
-    delete[] bikes;
+Truck_yard::~Truck() {
+    delete[] trucks;
 }
 
-int Bike_yard::get_current_number_of_Bike() {
-    return current_size;
+int Truck_yard::get_total_stock_count() {
+    return current_stock;
 }
 
-int Bike_yard::has_code(int code) {
+int Truck_yard::get_stock_count(int code) {
     int count = 0;
-    for (int i = 0; i < current_size; i++) {
-        if (bikes[i].get_code() == code) {
+    for (int i = 0; i < current_stock; i++) {
+        if (trucks[i].get_brand_code() == b_code) {
             count++;
         }
     }
     return count;
 }
 
-Bike* Bike_yard::get_bikes() {
-    return bikes;
+Truck* Truck_yard::get_current_stock_list() {
+    return trucks;
+    //retun Truck_yard*
 }
 
-bool Bike_yard::add_bike(Bike new_bike) {
+bool Truck_yard::addStock(Truck new_truck) {
 // bool Bike_yard::add_bike(const Bike& new_bike) {
-    if (current_size < capacity) {
-        bikes[current_size++] = new_bike;
+    if (current_stock < capacity) {
+        trucks[current_stock++] = new_truck;
         return true;
     }
     return false;

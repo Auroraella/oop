@@ -1,29 +1,28 @@
-#ifndef BIKE_YARD_H
-#define BIKE_YARD_H
+#ifndef TRUCK_YARD_H
+#define TRUCK_YARD_H
 
-#include "Bike.h" // Assuming Bike class is defined elsewhere
+#include "Truck.h" // Assuming Bike class is defined elsewhere
 
-class Bike_yard {
+class Truck_yard {
 
 private:
     int capacity;
-    int current_size;
-    Bike* bikes;
+    int current_stock;
+    Truck_yard* trucks;
 
 public:
     // Constructors
-    Bike_yard(); // Default constructor
-    Bike_yard(int capacity); // Constructor with capacity
+    Truck_yard(); // Default constructor
+    Truck_yard(int capacity); // Constructor with capacity
 
     // Destructor
-    ~Bike_yard();
+    ~Truck_yard();
 
     // Public methods
-    int get_current_number_of_Bike();
-    int has_code(int code);
-    Bike* get_bikes();
-    // bool add_bike(const Bike& new_bike); // Add a new bike
-    bool add_bike(Bike b);
+    int get_total_stock_count();
+    int get_stock_count(int code);
+    Truck* get_current_stock_list(); // returns an array containing all the trucks in the yard
+    bool addStock(Truck c); // tries to add a truck to yard. If there is enough space, return true
 };
 
-#endif // BIKE_YARD_H
+#endif
