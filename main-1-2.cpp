@@ -7,10 +7,10 @@ int main() {
     Truck_yard truckYard(3);
 
     // Creating Bike objects using both constructors
-    Truck t1("T1", 5); 
-    Truck t2("T2", 5); 
-    Truck t3("T3", 6); 
-    Truck t4("T4", 10); 
+    Truck t1(5, "T1"); 
+    Truck t2(5, "T2"); 
+    Truck t3(6, "T3"); 
+    Truck t4(10, "T4"); 
     
     if (truckYard.addStock(t1)) {
         std::cout << "Truck added successfully!" << std::endl;
