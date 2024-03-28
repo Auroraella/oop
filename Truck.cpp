@@ -1,19 +1,19 @@
-#include "Bike.h"
+#include "Truck.h"
 
 // Default constructor
-Bike::Bike() : name(""), code(0) {}
+Truck::Truck() : b_name(""), b_code(0) {}
 
 // Constructor with parameters
-Bike::Bike(std::string name, int code) : name(name), code(code) {}
+Truck::Truck(std::string b_name, int b_code) : b_name(b_name), b_code(b_code) {}
 
 // Getter for name
-std::string Bike::get_name() {
-    return name;
+std::string Truck::get_brand_name() {
+    return b_name;
 }
 
 // Getter for code
-int Bike::get_code() {
-    return code;
+int Truck::get_brand_code() {
+    return b_code;
 }
 
 // // Setter for name
