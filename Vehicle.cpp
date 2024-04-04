@@ -8,3 +8,7 @@ Vehicle::Vehicle(int id) : ID(id) {
 int Vehicle::getID() const {
     return ID;
 }
+
+std::time_t Vehicle::getTimeOfEntry() const {
+    return timeOfEntry;
+}

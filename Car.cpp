@@ -10,4 +10,3 @@ int Car::getParkingDuration() {
     return static_cast<int>(duration * 0.9); // 10% reduction
 }
 
-
