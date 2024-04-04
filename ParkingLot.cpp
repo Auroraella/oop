@@ -7,7 +7,7 @@ ParkingLot::ParkingLot(int capacity) : maxCapacity(capacity), count(0) {
 }
 
 ParkingLot::~ParkingLot() {
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; ++i) {
         delete vehicles[i];
     }
     delete[] vehicles;
@@ -20,26 +20,24 @@ int ParkingLot::getCount() const {
 void ParkingLot::parkVehicle(Vehicle* vehicle) {
     if (count < maxCapacity) {
         vehicles[count++] = vehicle;
-        std::cout << "Vehicle with ID " << vehicle->getID() << " parked successfully." << std::endl;
     } else {
-        std::cout << "The lot is full." << std::endl;
+        std::cout << "The lot is full" << std::endl;
     }
 }
 
 void ParkingLot::unparkVehicle(int id) {
     bool found = false;
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; ++i) {
         if (vehicles[i]->getID() == id) {
             delete vehicles[i];
             vehicles[i] = vehicles[count - 1];
             --count;
             found = true;
-            std::cout << "Vehicle with ID " << id << " removed from the parking lot." << std::endl;
             break;
         }
     }
     if (!found) {
-        std::cout << "Vehicle with ID " << id << " not found in the parking lot." << std::endl;
+        std::cout << "Vehicle not in lot" << std::endl;
     }
 }
 
