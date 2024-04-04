@@ -7,7 +7,7 @@ ParkingLot::ParkingLot(int capacity) : maxCapacity(capacity), count(0) {
 }
 
 ParkingLot::~ParkingLot() {
-    for (int i = 0; i < count; ++i) {
+    for (int i = 0; i < count; i++) {
         delete vehicles[i];
     }
     delete[] vehicles;
@@ -28,7 +28,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
 
 void ParkingLot::unparkVehicle(int id) {
     bool found = false;
-    for (int i = 0; i < count; ++i) {
+    for (int i = 0; i < count; i++) {
         if (vehicles[i]->getID() == id) {
             delete vehicles[i];
             vehicles[i] = vehicles[count - 1];
