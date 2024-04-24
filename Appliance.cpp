@@ -5,19 +5,14 @@ Appliance::Appliance() : powerRating(0), isOn(false) {}
 
 Appliance::Appliance(int powerRating) : powerRating(powerRating), isOn(false) {}
 
-void Appliance::turnOn() {
-    isOn = true;
+Appliance::~Appliance() {} // Virtual destructor definition
+
+int Appliance::getPowerRating() const {
+    return powerRating;
 }
 
-void Appliance::turnOff() {
-    isOn = false;
-}
-
-double Appliance::getPowerConsumption() const {
-    if (isOn)
-        return calculateEnergyConsumption();
-    else
-        return 0.0;
+void Appliance::setPowerRating(int powerRating) {
+    this->powerRating = powerRating;
 }
 
 bool Appliance::getIsOn() const {

@@ -7,9 +7,10 @@ public:
     Appliance();
     Appliance(int powerRating);
 
-    void turnOn();
-    void turnOff();
-    double getPowerConsumption() const;
+    virtual ~Appliance(); // Virtual destructor
+
+    int getPowerRating() const; // Corrected function name
+    void setPowerRating(int powerRating); // Corrected function name
 
     bool getIsOn() const;
     void setIsOn(bool isOn);
