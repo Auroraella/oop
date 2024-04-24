@@ -5,24 +5,26 @@ Appliance::Appliance() : powerRating(0), isOn(false) {}
 
 Appliance::Appliance(int powerRating) : powerRating(powerRating), isOn(false) {}
 
-Appliance::~Appliance() {} // Virtual destructor definition
+void Appliance::setPowerRating(int powerRating) {
+    this->powerRating = powerRating;
+}
 
 int Appliance::getPowerRating() const {
     return powerRating;
 }
 
-void Appliance::setPowerRating(int powerRating) {
-    this->powerRating = powerRating;
+void Appliance::turnOn() {
+    isOn = true;
 }
 
-bool Appliance::getIsOn() const {
+void Appliance::turnOff() {
+    isOn = false;
+}
+
+bool Appliance::isPoweredOn() const {
     return isOn;
 }
 
-void Appliance::setIsOn(bool isOn) {
-    this->isOn = isOn;
-}
-
-double Appliance::calculateEnergyConsumption() const {
-    return 0.0;
+double Appliance::getPowerConsumption() const {
+    return 0.0; // Default implementation for base class
 }

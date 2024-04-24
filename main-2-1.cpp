@@ -1,16 +1,16 @@
+// main-2-1.cpp
 #include <iostream>
-#include "Tv.h"
+#include "Fridge.h"
 
 int main() {
-    // Create a TV with a power rating of 200 and a screen size of 40 inches
-    Tv myTv(200, 40);
+    // Create a fridge with a power rating of 150 and a volume of 200 litres
+    Fridge myFridge(150, 200);
 
-    // Set a new screen size for the TV
-    myTv.setScreenSize(50);
+    // Turn on the fridge
+    myFridge.turnOn();
 
-    // Display the screen size and power consumption of the TV
-    std::cout << "Screen Size of TV: " << myTv.getScreenSize() << " inches" << std::endl;
-    std::cout << "Power Consumption of TV: " << myTv.getPowerConsumption() << " watts" << std::endl;
+    // Display the power consumption of the fridge
+    std::cout << "Power Consumption of Fridge: " << myFridge.getPowerConsumption() << " watts" << std::endl;
 
     return 0;
 }
