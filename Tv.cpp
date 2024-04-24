@@ -1,5 +1,6 @@
 // Tv.cpp
 #include "Tv.h"
+#include "Appliance.h"
 
 Tv::Tv() : Appliance(), screenSize(0.0) {}
 

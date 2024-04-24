@@ -1,25 +1,20 @@
-// Appliance.h
-#ifndef APPLIANCE_H
-#define APPLIANCE_H
+// Tv.h
+#ifndef TV_H
+#define TV_H
 
-class Appliance {
+
+class Tv : public Appliance {
 public:
-    Appliance();
-    Appliance(int powerRating);
+    Tv();
+    Tv(int powerRating, double screenSize);
 
-    virtual ~Appliance(); // Virtual destructor
+    void setScreenSize(double screenSize);
+    double getScreenSize() const;
 
-    int getPowerRating() const; // Corrected function name
-    void setPowerRating(int powerRating); // Corrected function name
-
-    bool getIsOn() const;
-    void setIsOn(bool isOn);
-
-    virtual double calculateEnergyConsumption() const;
+    double getPowerConsumption() const override; // Correctly overrides the virtual function
 
 private:
-    int powerRating;
-    bool isOn;
+    double screenSize; // screen size in inches
 };
 
-#endif // APPLIANCE_H
+#endif // TV_H
