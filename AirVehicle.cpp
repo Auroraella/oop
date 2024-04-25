@@ -37,8 +37,6 @@ void AirVehicle::set_numberOfFlights(int n) {
 }
 
 
-
-
 void AirVehicle::refuel() {
     this->fuel = 100;
 }
