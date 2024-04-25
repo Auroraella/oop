@@ -3,11 +3,9 @@
 
 AirVehicle::AirVehicle() : AirVehicle(0){}
 
-
 AirVehicle::AirVehicle(int w) : weight(w), fuel(100), numberOfFlights(0) {
 	
 }
-
 
 int AirVehicle::get_weight() const {
     return this->weight;

@@ -3,7 +3,6 @@
 
 #include <string>
 
-
 class AirVehicle {
 protected:
     int weight;          // the weight of AirVehicle
