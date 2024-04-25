@@ -1,39 +1,53 @@
 #include "AirVehicle.h"
 
-AirVehicle::AirVehicle() : weight(0), fuel(100), numberOfFlights(0) {}
 
-AirVehicle::AirVehicle(int w) : weight(w), fuel(100), numberOfFlights(0) {}
+AirVehicle::AirVehicle() : AirVehicle(0){}
+
+
+AirVehicle::AirVehicle(int w) : weight(w), fuel(100), numberOfFlights(0) {
+	
+}
+
 
 int AirVehicle::get_weight() const {
-    return weight;
+    return this->weight;
 }
+
 
 float AirVehicle::get_fuel() const {
-    return fuel;
+    return this->fuel;
 }
+
 
 int AirVehicle::get_numberOfFlights() const {
-    return numberOfFlights;
+    return this->numberOfFlights;
 }
+
 
 void AirVehicle::set_weight(int w) {
-    weight = w;
+    this->weight = w;
 }
+
 
 void AirVehicle::set_fuel(float f) {
-    fuel = f;
+    this->fuel = f;
 }
 
+
 void AirVehicle::set_numberOfFlights(int n) {
-    numberOfFlights = n;
+    this->numberOfFlights = n;
 }
+
+
 
 
 void AirVehicle::refuel() {
-    fuel = 100;
+    this->fuel = 100;
 }
 
+
 void AirVehicle::fly(int headwind, int minutes) {
-    numberOfFlights++;
+    this->numberOfFlights++;
 }
+
 

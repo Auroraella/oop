@@ -1,5 +1,6 @@
 #include "AirFleet.h"
 
+
 AirFleet::AirFleet() {
     fleet = new AirVehicle*[5];
     fleet[0] = new AirPlane(20, 10);
@@ -9,6 +10,7 @@ AirFleet::AirFleet() {
     fleet[4] = new AirPlane(15, 20);
 }
 
-AirVehicle **AirFleet::get_fleet() const {
+
+AirVehicle** AirFleet::get_fleet() const {
     return fleet;
 }

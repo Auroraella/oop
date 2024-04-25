@@ -3,8 +3,9 @@
 
 #include <string>
 
+
 class AirVehicle {
-protected: 
+protected:
     int weight;          // the weight of AirVehicle
     float fuel;          // fuel percentage, initially 100%
     int numberOfFlights;
@@ -20,5 +21,6 @@ public:
     void refuel(); // Resets fuel back to 100%
     virtual void fly(int headwind, int minutes);
 };
+
 
 #endif

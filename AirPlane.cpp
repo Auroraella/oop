@@ -1,11 +1,15 @@
 #include "AirPlane.h"
 
+
 AirPlane::AirPlane(int w, int p) : AirVehicle(w), numPassengers(p) {}
+
+
 
 
 int AirPlane::get_numPassengers() const {
     return numPassengers;
 }
+
 
 void AirPlane::reducePassengers(int x) {
     if (numPassengers - x < 0){
@@ -15,10 +19,12 @@ void AirPlane::reducePassengers(int x) {
     }
 }
 
+
 void AirPlane::fly(int headwind, int minutes) {
     if (fuel < 20) {
         return;
     }
+
 
     float consumption = 0 ;
     if (headwind >= 60){
@@ -32,5 +38,8 @@ void AirPlane::fly(int headwind, int minutes) {
     }
     fuel -= consumption;
 
+
     numberOfFlights++;
 }
+
+

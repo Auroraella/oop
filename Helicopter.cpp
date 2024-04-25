@@ -1,30 +1,42 @@
 #include "Helicopter.h"
 
+
 Helicopter::Helicopter(int w, std::string n) : AirVehicle(w), name(n) {}
+Helicopter::Helicopter() : Helicopter(0,"") {
+}
+
 
 std::string Helicopter::get_name() const {
-    return name;
+    return this->name;
 }
+
 
 void Helicopter::set_name(std::string n) {
-    name = n;
+    this->name = n;
 }
 
+
 void Helicopter::fly(int headwind, int minutes) {
-    if (fuel < 20){
-        return;
-    }
+	
+    
+
 
     float consumption = 0;
     if (headwind >= 40){
-        consumption += 0.4*minutes;
+        consumption = 0.4*minutes;
     }else{
         consumption = 0.18*minutes;
     }
+	int extra = 0;
     if (weight > 5670){
-        consumption += 0.01 * (weight - 5670) * minutes;
+        extra = this->weight - 5670;
+    }
+    consumption += extra*0.01*minutes;
+if (fuel - consumption < 20){
+        return;
     }
 
+
     fuel -= consumption;
-    numberOfFlights++; 
+    numberOfFlights++;
 }
