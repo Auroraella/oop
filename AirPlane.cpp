@@ -21,9 +21,9 @@ void AirPlane::reducePassengers(int x) {
 
 
 void AirPlane::fly(int headwind, int minutes) {
-    if (fuel < 20) {
-        return;
-    }
+    // if (fuel < 20) {
+    //     return;
+    // }
 
 
     float consumption = 0 ;
