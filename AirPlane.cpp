@@ -2,11 +2,9 @@
 
 Airplane::Airplane(int w, int p) : AirVehicle(w), numPassengers(p) {}
 
-
 int Airplane::get_numPassengers() const {
     return numPassengers;
 }
-
 
 void Airplane::reducePassengers(int x) {
     if (numPassengers - x < 0){
@@ -15,7 +13,6 @@ void Airplane::reducePassengers(int x) {
         numPassengers -= x;
     }
 }
-
 
 void Airplane::fly(int headwind, int minutes) {
     // if (fuel < 20) {
@@ -33,8 +30,6 @@ void Airplane::fly(int headwind, int minutes) {
         return;
     }
     fuel -= consumption;
-
-
     numberOfFlights++;
 }
 
