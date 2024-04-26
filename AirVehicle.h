@@ -21,5 +21,4 @@ public:
     virtual void fly(int headwind, int minutes);
 };
 
-
 #endif
