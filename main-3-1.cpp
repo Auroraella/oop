@@ -7,8 +7,7 @@ int main()
     AirVehicle **vehicles = fleet.get_fleet();
 
 
-    for (int i = 0; i < 5; i++)
-    {
+    for (int i = 0; i < 5; i++){
         std::cout << "Vehicle " << i + 1 << " weight: " << vehicles[i]->get_weight() << std::endl;
     }
 

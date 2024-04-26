@@ -3,11 +3,11 @@
 
 #include "AirVehicle.h"
 
-class AirPlane : public AirVehicle {
+class Airplane : public AirVehicle {
 private:
     int numPassengers;
 public:
-    AirPlane(int w, int p);
+    Airplane(int w, int p);
     int get_numPassengers() const;
     void reducePassengers(int x);
     void fly(int headwind, int minutes) override;
