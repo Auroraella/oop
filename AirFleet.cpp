@@ -8,11 +8,9 @@ AirFleet::AirFleet() {
     fleet[2] = new AirVehicle(5000);
     fleet[3] = new Helicopter(100, "WhiteHawk");
     fleet[4] = new AirPlane(15, 20);
-    std::cout << "nothing";
 }
 
 
 AirVehicle** AirFleet::get_fleet() const {
-    std::cout << "ez" << std::endl;
     return fleet;
 }
