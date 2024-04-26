@@ -40,7 +40,7 @@ public:
     void AirVehicle set_fuel();
     void AirVehicle set_numberOfFlights();
     void refuel();      // Resets fuel back to 100%
-    virtual void fly(int headwind, int minutes); // headwind in km/h and minutes (time flying)
+    virtual void fly(int headwind, int minutes) override; // headwind in km/h and minutes (time flying)
 };
 
 #endif

@@ -30,6 +30,8 @@ private:
 public:
     Helicopter();
     Helicopter(int w, string n);     // creates a Helicopter with weight w and name n
-
+    int Helicopter get_name();
+    void Helicopter set_name();
+    void fly(int headwind, int minutes);
 
 }
