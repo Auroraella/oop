@@ -1,20 +1,16 @@
 #include "Helicopter.h"
 
-
 Helicopter::Helicopter(int w, std::string n) : AirVehicle(w), name(n) {}
 Helicopter::Helicopter() : Helicopter(0,"") {
 }
-
 
 std::string Helicopter::get_name() const {
     return this->name;
 }
 
-
 void Helicopter::set_name(std::string n) {
     this->name = n;
 }
-
 
 void Helicopter::fly(int headwind, int minutes) {
     float consumption = 0;
@@ -31,7 +27,6 @@ void Helicopter::fly(int headwind, int minutes) {
     if (fuel - consumption < 20){
         return;
     }
-
 
     fuel -= consumption;
     numberOfFlights++;

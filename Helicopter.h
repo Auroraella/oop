@@ -1,9 +1,7 @@
 #ifndef HELICOPTER_H
 #define HELICOPTER_H
 
-
 #include "AirVehicle.h"
-
 
 class Helicopter : public AirVehicle {
 private:
