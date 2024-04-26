@@ -12,5 +12,6 @@ AirFleet::AirFleet() {
 
 
 AirVehicle** AirFleet::get_fleet() const {
+    std::cout << "ez" << std::endl;
     return fleet;
 }
