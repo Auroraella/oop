@@ -1,5 +1,3 @@
-// Invoice.cpp
-
 #include "Invoice.h"
 
 Invoice::Invoice(std::string invoiceId) : invoiceId(invoiceId), dollarsOwed(0) {}

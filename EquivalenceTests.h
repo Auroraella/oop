@@ -1,5 +1,3 @@
-// EquivalenceTests.h
-
 #ifndef EQUIVALENCETESTS_H
 #define EQUIVALENCETESTS_H
 
@@ -14,7 +12,7 @@ public:
         testMixedIntegers();
         testZeroes();
         testBigPositiveNumbers();
-        // Add other tests here
+
     }
 
 private:
