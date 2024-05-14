@@ -7,8 +7,9 @@
 class USBConnection {
 private:
     static std::stack<int> ids;
+    int ID; // Declare ID member variable
 
-    USBConnection(int id) : ID(id) {}
+    USBConnection(int id) : ID(id) {} // Constructor is private
 
 public:
     ~USBConnection() {
