@@ -32,14 +32,11 @@ public:
 
     void gameLoop(int maxIterations, double mineDistanceThreshold) {
         for (int iteration = 0; iteration < maxIterations; ++iteration) {
-            std::cout << "Iteration: " << iteration << "\n";
-
             // Move all ships
             for (auto entity : entities) {
                 Ship* ship = dynamic_cast<Ship*>(entity);
                 if (ship) {
                     ship->move(1, 0);  // Example move right by 1
-                    std::cout << "Ship moved to: (" << std::get<0>(ship->getPos()) << ", " << std::get<1>(ship->getPos()) << ")\n";
                 }
             }
 
@@ -54,8 +51,6 @@ public:
                             if (distance < mineDistanceThreshold) {
                                 Explosion explosion = mine->explode();
                                 explosion.apply(*ship);
-                                std::cout << "Mine exploded at: (" << std::get<0>(mine->getPos()) << ", " << std::get<1>(mine->getPos()) << ")\n";
-                                std::cout << "Ship destroyed at: (" << std::get<0>(ship->getPos()) << ", " << std::get<1>(ship->getPos()) << ")\n";
                             }
                         }
                     }
@@ -73,7 +68,6 @@ public:
             }
 
             if (allShipsDestroyed) {
-                std::cout << "All ships destroyed. Ending game.\n";
                 break;
             }
         }
