@@ -10,7 +10,7 @@ public:
 
     Explosion explode() {
         type = 'X';
-        return Explosion(std::get<0>(getPos()), std::get<1>(getPos()));
+        return Explosion(std::get<0>(position), std::get<1>(position));
     }
 };
 

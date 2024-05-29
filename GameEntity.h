@@ -6,6 +6,7 @@
 class GameEntity {
 public:
     GameEntity(int x, int y, char type) : position(x, y), type(type) {}
+    virtual ~GameEntity() = default;  // Virtual destructor for polymorphic behavior
 
     std::tuple<int, int> getPos() const {
         return position;
@@ -15,7 +16,7 @@ public:
         return type;
     }
 
-private:
+protected:
     std::tuple<int, int> position;
     char type;
 };
