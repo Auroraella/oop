@@ -1,3 +1,4 @@
+
 // main-2.cpp
 #include "Character.h"
 #include "Trap.h"
@@ -14,7 +15,7 @@ int main() {
   std::cout << "Character moved to: (" << std::get<0>(character.getPos()) << ", " << std::get<1>(character.getPos()) << ")\n";
 
   trap.apply(character);
-  std::cout << "Trap applied to character. Character type: " << character.getEntity() << "\n";
+  std::cout << "Character type after trap: " << character.getType() << "\n";
 
   return 0;
 }

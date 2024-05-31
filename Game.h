@@ -37,11 +37,11 @@ public:
   void gameLoop(int maxIterations, double trapActivationDistance) {
     for (int iteration = 0; iteration < maxIterations; iteration++) {
       for (Cell* cell : grid) {
-        if (cell->getEntity() == 'C') {
+        if (cell->getType() == 'C') {
           Character* character = static_cast<Character*>(cell);
           character->move(1, 0);
           for (Cell* otherCell : grid) {
-            if (otherCell->getEntity() == 'T') {
+            if (otherCell->getType() == 'T') {
               Trap* trap = static_cast<Trap*>(otherCell);
               if (trap->isActive() && Utils::calculateDistance(character->getPos(), trap->getPos()) <= trapActivationDistance) {
                 trap->apply(*character);

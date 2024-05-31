@@ -13,7 +13,7 @@ public:
 
   bool isActive() { return active; }
   void apply(Cell& cell) override {
-    cell.setEntity('T');
+    cell.setType('T');
     active = false;
   }
 };
