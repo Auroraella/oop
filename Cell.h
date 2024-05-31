@@ -2,7 +2,6 @@
 #define CELL_H
 #include <tuple>
 
-// Cell.h
 class Cell {
 private:
   std::tuple<int, int> position;

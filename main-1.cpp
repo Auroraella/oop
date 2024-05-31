@@ -1,4 +1,3 @@
-// main-1.cpp
 #include "Cell.h"
 #include "Effect.h"
 #include "Utils.h"

@@ -1,4 +1,3 @@
-// Effect.h
 #ifndef EFFECT_H
 #define EFFECT_H
 #include "Cell.h"

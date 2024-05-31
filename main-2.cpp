@@ -1,5 +1,4 @@
 
-// main-2.cpp
 #include "Character.h"
 #include "Trap.h"
 #include <iostream>
